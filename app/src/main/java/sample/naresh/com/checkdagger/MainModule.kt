@@ -12,6 +12,7 @@ class MainModule(val mainView : IMainView) {
     @Provides
     @ActivityScope
     fun providePresenter(): MainPreseneter{
+
         return MainPreseneter(mainView);
     }
 }
